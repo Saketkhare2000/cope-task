@@ -1,0 +1,73 @@
+.navbar {
+  border-bottom: 1px solid #e5e5e5;
+  border-radius: 0;
+  margin-left: 20%;
+  min-height: 80px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+.navbar .search i {
+  font-size: 20px;
+  color: var(--muted-text);
+  cursor: pointer;
+}
+.navbar .search input {
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 0 20px;
+  background-color: var(--white-bg);
+  color: var(--muted-text);
+  font-weight: 700;
+  font-size: 20px;
+  font-family: var(--ffamily);
+}
+.navbar .nav-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--gray-bg);
+  padding: 5px 0px;
+  border-radius: 9999px;
+}
+.navbar .nav-center .nav-item {
+  cursor: pointer;
+  color: var(--muted-text);
+  padding: 0px 10px;
+  font-weight: 700;
+  margin: 0px 10px;
+  min-width: 200px;
+  text-align: center;
+}
+.navbar .nav-center .nav-item.active {
+  background-color: var(--blue);
+  color: var(--white-bg);
+  padding: 15px 25px;
+  border-radius: 9999px;
+}
+.navbar .nav-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .nav-icon i {
+  font-size: 18px;
+  color: var(--white-bg);
+  cursor: pointer;
+  background-color: var(--blue);
+  padding: 15px;
+  border-radius: 50%;
+}

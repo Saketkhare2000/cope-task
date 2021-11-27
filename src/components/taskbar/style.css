@@ -1,0 +1,237 @@
+.taskbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  overflow-y: scroll;
+  z-index: 1;
+  height: 100%;
+}
+.taskbar .taskbar-title {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: var(--white-bg);
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  height: 80px;
+}
+.taskbar .taskbar-title h1 {
+  font-size: 22px;
+  color: var(--muted-text);
+}
+.taskbar .taskbar-title i {
+  cursor: pointer;
+  font-size: 22px;
+  color: var(--muted-text);
+}
+.taskbar .taskbar-title i:hover {
+  color: var(--dark-text);
+}
+.taskbar .taskbar-details {
+  padding: 15px;
+}
+.taskbar .taskbar-details .taskbar-details-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.taskbar
+  .taskbar-details
+  .taskbar-details-user
+  .taskbar-details-user-image
+  img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.taskbar .taskbar-details .taskbar-details-user .taskbar-details-user-name {
+  text-align: center;
+}
+.taskbar .taskbar-details .taskbar-details-user .taskbar-details-user-name h3 {
+  font-size: 22px;
+  color: var(--dark-text);
+}
+.taskbar
+  .taskbar-details
+  .taskbar-details-user
+  .taskbar-details-user-name
+  span {
+  display: inline-block;
+  font-size: 16px;
+  color: var(--muted-text);
+  margin-top: 4px;
+}
+.taskbar .taskbar-details .taskbar-details-user .taskbar-details-user-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 32px 0px;
+}
+.taskbar .taskbar-details .taskbar-details-user .taskbar-details-user-icons i {
+  font-size: 18px;
+  color: var(--blue);
+  cursor: pointer;
+  font-size: 22px;
+  background-color: var(--gray-bg);
+  border-radius: 50%;
+  padding: 15px;
+  transition: all 0.2s ease-out;
+}
+.taskbar
+  .taskbar-details
+  .taskbar-details-user
+  .taskbar-details-user-icons
+  i:hover {
+  filter: brightness(0.9);
+}
+.taskbar .taskbar-details .taskbar-details-user .taskbar-details-user-progress {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.taskbar
+  .taskbar-details
+  .taskbar-details-user
+  .taskbar-details-user-progress
+  p {
+  font-size: 16px;
+  color: var(--muted-text);
+  font-weight: bold;
+  text-align: right;
+  display: inline-block;
+}
+.taskbar
+  .taskbar-details
+  .taskbar-details-user
+  .taskbar-details-user-progress
+  .taskbar-details-user-progress-bar {
+  height: 10px;
+  width: 100%;
+  background-color: var(--gray-bg);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.taskbar
+  .taskbar-details
+  .taskbar-details-user
+  .taskbar-details-user-progress
+  .taskbar-details-user-progress-bar
+  .taskbar-details-user-progress-bar-fill {
+  height: 10px;
+  width: 30%;
+  background-color: var(--blue);
+  border-radius: 5px;
+  transition: all 0.2s ease-out;
+  z-index: 9;
+}
+.taskbar
+  .taskbar-details
+  .taskbar-details-user
+  .taskbar-details-user-progress
+  .taskbar-details-user-progress-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 32px 0px;
+}
+.taskbar
+  .taskbar-details
+  .taskbar-details-user
+  .taskbar-details-user-progress
+  .taskbar-details-user-progress-text
+  .taskbar-details-user-progress-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.taskbar
+  .taskbar-details
+  .taskbar-details-user
+  .taskbar-details-user-progress
+  .taskbar-details-user-progress-text
+  .taskbar-details-user-progress-item
+  h2 {
+  font-size: 18px;
+  color: var(--dark-text);
+  font-weight: 700;
+}
+.taskbar
+  .taskbar-details
+  .taskbar-details-user
+  .taskbar-details-user-progress
+  .taskbar-details-user-progress-text
+  .taskbar-details-user-progress-item
+  h4 {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--muted-text);
+  font-weight: 700;
+}
+.taskbar
+  .taskbar-details
+  .taskbar-details-user
+  .taskbar-details-user-progress
+  .taskbar-details-user-progress-text
+  .taskbar-details-user-progress-item
+  span {
+  font-size: 12px;
+  color: var(--muted-text);
+  font-weight: 500;
+}
+.taskbar .taskbar-details .taskbar-projects {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  margin: 12px 0px;
+}
+.taskbar .taskbar-details .taskbar-projects .taskbar-projects-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 12px 0px;
+  font-size: 18px;
+  color: var(--dark-text);
+  font-weight: 700;
+}
+.taskbar
+  .taskbar-details
+  .taskbar-projects
+  .taskbar-projects-list
+  .taskbar-projects-list-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 12px 0px;
+  font-size: 14px;
+  color: var(--muted-text);
+}
+.taskbar
+  .taskbar-details
+  .taskbar-projects
+  .taskbar-projects-list
+  .taskbar-projects-list-item-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: solid 5px var(--blue);
+  border-radius: 50%;
+  margin-right: 12px;
+}

@@ -1,0 +1,11 @@
+.user-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0px;
+}
+.user-comment i {
+  font-size: 20px;
+  color: #828282;
+  cursor: pointer;
+}
